@@ -122,6 +122,11 @@ body {
       background-color: red;
     }
   }
-  
+  .script.js {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the div to the full viewport height */
+}
   /* Add more chaotic styles as needed */
   
