@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.1" />
+    <title>aastu.instagam.JEMO</title>
+    <link href="horible.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        margin: 0;
+        padding: 0;
+
+      }
+
+      header {
+        background-color: #ffd700;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .yes {
+        margin: 20px;
+        padding: 20px;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        background-color: #ffe4b5;
+        border: 2px dashed #41138b;
+        border-radius: 10px;
+      }
+      @media only screen and (min-width: 450px) {
+  .yes {
+        grid-template-columns: 1fr !important;
+      }}
+      footer {
+        background-color: #ffd700;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Additional styles for image and like button */
+      .image-container {
+        margin-bottom: 20px;
+      }
+
+      .like-button {
+        margin-top: 10px;
+      }
+      #advert{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: yellow;
+        background: red;
+      }
+      button:hover{
+        transform: translateX(150px);
+      }
+      .gift {
+    animation: colorChange 1s ease infinite !important;
+}
+@keyframes border {
+    0% { border-radius: 10px; }
+    10% { border-radius: 30px; }
+    20% { border-radius: 20px; }
+    30% { border-radius: 100px; }
+    40% { border-radius: 10px; }
+    50% { border-radius: 02px; }
+    60% { border-radius: 25px; }
+    70% { border-radius: 10px; }
+    80% { border-radius: 13px; }
+    90% { border-radius: 10px; }
+}
+@keyframes colorChange {
+    0% { background-color: red; }
+    10% { background-color: yellow; }
+    20% { background-color: green; }
+    30% { background-color: blue; }
+    40% { background-color: red; }
+    50% { background-color: red; }
+    60% { background-color: yellow; }
+    70% { background-color: green; }
+    80% { background-color: blue; }
+    90% { background-color: red; }
+}
+.image-container img{
+  width: 100%;
+  animation: border 1s ease infinite !important;
+}
+#haharick{
+  position: fixed;
+  height: 100%;
+  z-index: 99;
+  width: 100%;
+background-color: rgb(123, 229, 255);
+}
+#haharick h1{
+  font-size: 5rem !important;
+}
+#haharick video{
+  height: 100%;
+  z-index: 99;
+  width: 100%;
+}
+@media only screen and (max-width: 450px) {
+  .yes {
+        grid-template-columns: 1fr !important;
+      }}
+    </style>
+  </head>
+  <body>
+    <div id="haharick">
+      <h1 onclick="hideme()">X</h1>
+      <video width="640" height="360" autoplay>
+           <source src="webmedia/R.mp4" type="video/mp4" />
+      </video>
+
+  </div>
+    <div id="advert">
+        <video width="640" height="360" autoplay muted controls>
+             <source src="webmedia/Ishowspeed-Barking.m4v" type="video/mp4" />
+        </video>
+        <button id="closeadvert" >X</button>
+        <h1>69% OFF </h1>
+
+    </div>
+      <h1 style="color: #976060">instagrm.Jemo</h1>
+    </header>
+
+    <div class="yes">
+      <p style="color: #800000">
+        instagrm clone
+      </p>
+
+      <h2>rate my rizz 1-10</h2>
+
+      <div class="image-container">
+        <img src="webmedia/hor.jpg" alt="" />
+        <button class="like-button" onclick="toggleLike()">Like</button>
+      </div>
+
+      <h2>how you doin</h2>
+      <div class="image-container">
+        <img src="webmedia/hor.jpg" alt="" />
+        <button class="like-button" onclick="toggleLike()">Like</button>
+      </div>
+
+      <div id="video-container">
+        <h2>how you like me now</h2>
+
+        <video width="640" height="360" controls>
+          <source src="webmedia/gif.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <script>
+        
+        const hideme =() => {
+          var haharick = document.getElementById("haharick");
+          haharick.style.display = "none";
+          setTimeout(function() {
+          showme();}, 5000);
+        }
+        hideme();
+        const showme =() => {
+          var haharick = document.getElementById("haharick");
+          haharick.style.display = "none";
+        }
+        var isLiked = false;
+
+        function toggleLike() {
+          var likeButton = event.target;
+
+          if (!isLiked) {
+            likeButton.innerHTML = "Unlike";
+            isLiked = true;
+            // You can add additional logic here, such as sending a request to the server to record the like
+          } else {
+            likeButton.innerHTML = "Like";
+            isLiked = false;
+            // Additional logic for "unlike" action
+          }
+        }
+        function updateRating(value) {
+        document.getElementById("ratingValue").innerText = value;
+    }
+      </script>
+    </div>
+
+    <footer>
+      <p style="color: #8b0000">
+        Enter Phone number sir
+      </p>
+      <input
+        type="range"
+        id="ratingRange"
+        min="1"
+        max="99999999"
+        oninput="updateRating(this.value)"
+      />
+      <span>09</span><span id="ratingValue">0</span>
+
+      <div>
+        <img style="height: 10vw;" src="webmedia/offer.jpg" alt="Ugly Image" />
+      </div>
+<div class="gift">
+      <h2>CLAIM YOUR GIFT NOW</h2>
+
+      <a
+        href="https://youtu.be/dQw4w9WgXcQ?si=Jg7NLlcgUdqtU2nH"
+        target="_blank"
+      >
+        <img
+          src="webmedia/GIFT.jpg"
+          alt="Your Photo"
+          width="200"
+          height="150"
+        />
+      </a></div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </footer>
+  </body>
+</html>
