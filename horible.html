@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
     <title>happy aastu student Website</title>
+    <link  href="horible.css" rel="stylesheet" type="text/css">
     <style>
         body {
             background-color: #ffcccb;
@@ -23,7 +24,7 @@
             margin: 20px;
             padding: 20px;
             background-color: #ffe4b5;
-            border: 2px dashed #8b4513;
+            border: 2px dashed #41138b;
             border-radius: 10px;
         }
 
@@ -32,25 +33,80 @@
             padding: 20px;
             text-align: center;
         }
+        
+        /* Additional styles for image and like button */
+        .image-container {
+            margin-bottom: 20px;
+        }
+
+        .like-button {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
+   
     <header>
-        <h1 style="color: #8b0000;">Welcome t o the Ugly Website!</h1>
+        <h1 style="color: #976060;">INSTAGRAM.JEMO</h1>
     </header>
 
     <section>
-        <p style="color: #800000;">This is will be the last ugly web site that you've ever seen!</p>
-        <img src="https://placekitten.com/800/400" alt="Ugly Image">
-        <ul style="list-style-type: none; color: #8b4513;">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
+        <p style="color: #800000;">if you want the number of these people to receive the gift at the bottom of the page </p>
+       
+        <h2>How do I look </h2>
+
+        <div class="image-container">
+            <img src="hor.jpg" alt="">
+            <button class="like-button" onclick="toggleLike()">Like</button>
+        </div>
+
+        <h2>How do I look </h2>
+        <div class="image-container">
+            <img src="hor.jpg" alt="">
+            <button class="like-button" onclick="toggleLike()">Like</button>
+        </div>
+        // the h2 is supposed to be a captiond for each picsS
+        <h2>How do I look </h2>
+        <div class="image-container">
+            <img src="hor.jpg" alt="">
+            <button class="like-button" onclick="toggleLike()">Like</button>
+        </div>
+
+        <script>
+            var isLiked = false;
+
+            function toggleLike() {
+                var likeButton = event.target;
+                
+                if (!isLiked) {
+                    likeButton.innerHTML = "Unlike";
+                    isLiked = true;
+                    // You can add additional logic here, such as sending a request to the server to record the like
+                } else {
+                    likeButton.innerHTML = "Like";
+                    isLiked = false;
+                    // Additional logic for "unlike" action
+                }
+            }
+        </script>
+        
     </section>
 
     <footer>
-        <p style="color: #8b0000;"> rate the ugliness of this Website from one to ten</p>
+        <p style="color: #8b0000;">Rate CATCHINESS of this Website from one to ten</p>
+        <input type="range" id="ratingRange" min="1" max="10" oninput="updateRating(this.value)">
+        <span id="ratingValue">5</span>
+
+        <div>  
+           <img src="offer.jpg" alt="Ugly Image">
+        </div>
+
+        <h2> GIFT FOR HOLIDAY</h2>
+
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=Jg7NLlcgUdqtU2nH" target="_blank">
+            <img src="GIFT.jpg" alt="Your Photo" width="200" height="150">
+        </a>
+
     </footer>
 </body>
 </html>
