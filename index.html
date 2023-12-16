@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>aastu.instagam.JEMO</title>
     <link href="horible.css" rel="stylesheet" type="text/css" />
     <style>
@@ -85,7 +86,7 @@
     90% { background-color: red; }
 }
 .image-container img{
-  width: 100%;
+  width: 70vw;
   animation: border 1s ease infinite !important;
 }
 #haharick{
@@ -103,7 +104,18 @@ background-color: rgb(123, 229, 255);
   z-index: 99;
   width: 100%;
 }
+@media only screen and (min-width: 450px) {
+  .image-container img{
+  width: 20vw;
+}  .yes {
+        grid-template-columns: 1fr 1fr !important;
+      }
+}
 @media only screen and (max-width: 450px) {
+  .image-container img{
+  width: 80vw !important;
+  animation: border 1s ease infinite !important;
+}
   .yes {
         grid-template-columns: 1fr !important;
       }}
@@ -112,7 +124,7 @@ background-color: rgb(123, 229, 255);
   <body>
     <div id="haharick">
       <h1 onclick="hideme()">X</h1>
-      <video width="640" height="360" autoplay>
+      <video width="640" height="360" autoplay loop>
            <source src="webmedia/R.mp4" type="video/mp4" />
       </video>
 
