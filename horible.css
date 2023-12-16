@@ -1,3 +1,127 @@
-.header{
-    color: aliceblue;
-}
+/* Additional styles for making the website more "ugly" */
+
+body {
+    font-family: "Impact", sans-serif; /* Chaotic and bold font */
+  }
+  
+  header {
+    background-color: #ff00ff; /* Purple background */
+  }
+  
+  .yes {
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ffcc00; /* Yellow background */
+    border: 5px dotted #00ff00; /* Green dotted border */
+    border-radius: 25px;
+  }
+  
+  footer {
+    background-color: #ff00ff; /* Purple background */
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .image-container img {
+    width: 50vw;
+    animation: border 2s ease infinite !important;
+  }
+  
+  h1, h2, p {
+    text-transform: uppercase; /* Uppercase text */
+    font-style: italic; /* Italics */
+    color: #ff0000; /* Red text color */
+  }
+  
+  @keyframes border {
+    0% {
+      border-radius: 10px;
+    }
+    10% {
+      border-radius: 30px;
+    }
+    20% {
+      border-radius: 20px;
+    }
+    30% {
+      border-radius: 100px;
+    }
+    40% {
+      border-radius: 10px;
+    }
+    50% {
+      border-radius: 2px;
+    }
+    60% {
+      border-radius: 25px;
+    }
+    70% {
+      border-radius: 10px;
+    }
+    80% {
+      border-radius: 13px;
+    }
+    90% {
+      border-radius: 10px;
+    }
+  }
+  
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+   }
+   
+   @keyframes spin {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+   }
+   
+   .inner {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: #f3f3f3;
+    border-radius: 50%;
+   }
+  @keyframes colorChange {
+    0% {
+      background-color: red;
+    }
+    10% {
+      background-color: rgb(84, 84, 60);
+    }
+    20% {
+      background-color: green;
+    }
+    30% {
+      background-color: blue;
+    }
+    40% {
+      background-color: rgb(113, 74, 74);
+    }
+    50% {
+      background-color: red;
+    }
+    60% {
+      background-color: yellow;
+    }
+    70% {
+      background-color: green;
+    }
+    80% {
+      background-color: blue;
+    }
+    90% {
+      background-color: red;
+    }
+  }
+  
+  /* Add more chaotic styles as needed */
+  

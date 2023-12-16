@@ -214,7 +214,9 @@ background-color: rgb(123, 229, 255);
       <span>09</span><span id="ratingValue">0</span>
 
       <div>
-        <img style="height: 10vw;" src="webmedia/offer.jpg" alt="Ugly Image" />
+        <img style="height: 10vw;" src="webmedia/offer.jpg" alt="Ugly Image"  width="300"
+        height="550"/>
+      
       </div>
 <div class="gift">
       <h2>CLAIM YOUR GIFT NOW</h2>
@@ -227,9 +229,20 @@ background-color: rgb(123, 229, 255);
           src="webmedia/GIFT.jpg"
           alt="Your Photo"
           width="200"
-          height="150"
+          height="250"
         />
-      </a></div>
+      </a>
+    </div>
+    <div class="loader">
+      <div class="inner"></div>
+     </div>
+     <script src="script.js"></script>
+    <script>
+      function updateRating(rating) {
+         var roundedRating = Math.round(rating / 100) * 100;
+         document.getElementById("ratingValue").innerText = roundedRating;
+      }
+     </script>
       <br>
       <br>
       <br>
