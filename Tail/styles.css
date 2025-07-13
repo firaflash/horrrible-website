@@ -1,0 +1,33 @@
+.modal {
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    width: 380px;
+    background: linear-gradient(135deg, #FDCB58, #D6249F, #285AEB);
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    font-family: 'Koho' , sans-serif;
+}
+
+.modal-content h3{
+    margin-bottom: -5px;
+    color: black;
+}
+.close-modal{
+    margin-left: 350px;
+    /* margin-bottom: px; */
+    font-size: 25px;
+}
